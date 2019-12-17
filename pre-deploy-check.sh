@@ -4,9 +4,9 @@
 # copy the script below into your app code repo (e.g. ./scripts/check_predeploy.sh) and 'source' it from your pipeline job
 #    source ./scripts/check_predeploy_kubectl.sh
 # alternatively, you can source it from online script:
-#    source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/check_predeploy_kubectl.sh")
+#    source <(curl -sSL "https://raw.githubusercontent.com/bhartshorn/commons/master/scripts/check_predeploy_kubectl.sh")
 # ------------------
-# source: https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/check_predeploy_kubectl.sh
+# source: https://raw.githubusercontent.com/bhartshorn/commons/master/scripts/check_predeploy_kubectl.sh
 
 # This script checks the IBM Container Service cluster is ready, has a namespace configured with access to the private
 # image registry (using an IBM Cloud API Key). It also configures Helm Tiller service to later perform a deploy with Helm.
