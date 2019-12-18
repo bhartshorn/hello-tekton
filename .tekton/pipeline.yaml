@@ -4,6 +4,8 @@ metadata:
   name: pipeline
 spec:
   params:
+    - name: gheToken
+      description: the API token for cloning from GHE
     - name: pipeline-pvc
       description: the pipeline pvc name
     - name: repository
@@ -30,6 +32,8 @@ spec:
       taskRef:
         name: build-task
       params:
+        - name: gheToken
+          value: $(params.gheToken)
         - name: task-pvc
           value: $(params.pipeline-pvc)
         - name: repository
@@ -41,4 +45,4 @@ spec:
         - name: registryNamespace
           value: $(params.registryNamespace)
         - name: registryRegion
-          value: $(params.registryRegion)          
+          value: $(params.registryRegion)
