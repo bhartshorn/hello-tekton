@@ -31,7 +31,7 @@ spec:
       image: alpine/git
       env:
         - name: GHE_TOKEN
-          value: $(inputs.params.gheToken
+          value: $(inputs.params.gheToken)
       command: ["/bin/sh", "-c"]
       args:
         - set -e -o pipefail;
